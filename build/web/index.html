@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Huffman Coding</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/unicons.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+        <!-- MAIN STYLE -->
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3426/3426679.png">
+    </head>
+
+    <body>
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/WebApplication1"><img alt="avatar" src="https://cdn-icons-png.flaticon.com/512/3426/3426679.png"
+                                                                     style="width: 50px;" /></i> Huffman Coding</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="/WebApplication1" class="nav-link"><span data-hover="Home">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/WebApplication1/product.html" class="nav-link"><span data-hover="Product">Product</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/WebApplication1/document.jsp" class="nav-link"><span data-hover="Document">Document</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/WebApplication1/draw.html" class="nav-link"><span data-hover="Draw">Draw</span></a> 
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-lg-auto">
+                        <div class="ml-lg-4">
+                            <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                                <i class="color-mode-icon"></i>
+                                Color mode
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ABOUT -->
+        <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                        <div class="about-text">
+                            <small class="small-text">Welcome to <span class="mobile-block">our DSA project</span></small>
+                            <h1 class="animated animated-text">
+                                <span class="mr-2">Hi there, We are</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Đào Đạt</span>
+                                    <span class="animated-item">Đoàn Mạnh</span>
+                                    <span class="animated-item">Ngọc Dũng</span>
+                                    <span class="animated-item">Đinh Khang</span>
+                                </div>
+                            </h1>
+
+                            <p>
+                                This is the final project of the DSA course of our group of 8. Topic about Huffman algorithm.</p>
+
+                            <div class="custom-btn-group mt-4">
+                                <a href="/WebApplication1/document.jsp" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Documents</a>
+                                <a href="/WebApplication1/product.html" class="btn custom-btn custom-btn-bg custom-btn-link">Try our product</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div class="about-image svg">
+                            <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="project py-5" id="project">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-11 text-center mx-auto col-12">
+
+                        <div class="col-lg-8 mx-auto">
+                            <h2>Algorithm examples and applications</h2>
+                        </div>
+
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="project-info" style="display: flex; justify-content: center; align-items: center; height: 600px;">
+                                    <img src="assets/HuffmanAlgorithmGif.gif" class="img-fluid" alt="project image"
+                                         style="width: 800px; box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
+                                         alt="project image">
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="project-info" style="display: flex; justify-content: center; align-items: center; height: 600px;">
+                                    <img src="assets/Screenshot 2023-12-10 122521.png" class="img-fluid"
+                                         style="width: 800px; box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;"
+                                         alt="project image">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="list-image project py-5">
+            <div class="info1" id="anh1" style="justify-content: center; align-items: center;">
+                <img class="image1" src="./assets//waterpig.jpg" />
+                <h1 class="username1">Đào Đạt</h1>
+            </div>
+            <div class="info2" id="anh2" style="justify-content: center; align-items: center;">
+                <img class="image2" src="./assets//manhleo.png" />
+                <h1 class="username2">Mạnh Leo</h1>
+            </div>
+            <div class="info3" id="anh3" style="justify-content: center; align-items: center;">
+                <img class="image3" src="./assets//dung.jpg" />
+                <h1 class="username3">Ngọc Dũng</h1>
+            </div>
+            <div class="info4" id="anh4" style="justify-content: center; align-items: center;">
+                <img class="image4" src="./assets//khang.jpg" />
+                <h1 class="username4">Đinh Khang</h1>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <section class="contact py-5" id="contact">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-5 mr-lg-5 col-12">
+                        <div class="google-map w-100">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.923022282401!2d105.80549927580937!3d20.995722580645353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9663324eab%3A0xc982ae258f0f1524!2zMzM0IMSQLiBOZ3V54buFbiBUcsOjaSwgVGhhbmggWHXDom4gVHJ1bmcsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1701350530493!5m2!1svi!2s"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                            <div class="contact-info-item">
+                                <h3 class="mb-3 text-white">Say hello</h3>
+                                <p class="footer-text mb-0">0 999 9999 99</p>
+                                <p><a href="mailto:hello@company.co">doanducmanh_t66@hus.edu.vn</a></p>
+                            </div>
+                            <ul class="social-links">
+                                <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left"
+                                       title="Instagram"></a></li>
+                                <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="contact-form">
+                            <h2 class="mb-4">Interested to work together? Let's talk</h2>
+
+                            <form action="" method="get">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="ml-lg-auto col-lg-5 col-12">
+                                        <input type="submit" class="form-control submit-btn" value="Send Button">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <p class="copyright-text text-center">Copyright &copy; 2023 Group 8 DSA . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow"
+                                                                             href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+
+    <style>
+        .list-image {
+            display: flex !important;
+            justify-content: center;
+        }
+
+        .image1 {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 99%;
+            margin: 30px 30px 30px 30px;
+            box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4) !important;
+        }
+
+        .image2 {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 99%;
+            margin: 30px 30px 30px 30px;
+            box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4) !important;
+        }
+
+        .image3 {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 99%;
+            margin: 30px 30px 30px 30px;
+            box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4) !important;
+        }
+
+        .image4 {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 99%;
+            margin: 30px 30px 30px 30px;
+            box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4) !important;
+        }
+
+        .info1 {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+        }
+
+        .info2 {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+        }
+
+        .info3 {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+        }
+
+        .info4 {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+        }
+
+        @media (max-width: 1200px) {
+            .info1 {
+                flex-direction: row;
+            }
+
+            .info2 {
+                flex-direction: row;
+            }
+
+            .info3 {
+                flex-direction: row;
+            }
+
+            .info4 {
+                flex-direction: row;
+            }
+
+            .list-image {
+                display: flex !important;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                margin-left: 50px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .list-image {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .image1 {
+                width: 100px;
+                height: 100px;
+            }
+
+            .image2 {
+                width: 100px;
+                height: 100px;
+            }
+
+            .image3 {
+                width: 100px;
+                height: 100px;
+            }
+
+            .image4 {
+                width: 100px;
+                height: 100px;
+            }
+            .animated-info {
+                min-width: 200px;
+            }
+            .animated-item {
+                font-size: 30px;
+            }
+
+            .custom-btn-group {
+                text-align: center;
+            }
+
+            .custom-btn {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .owl-theme .owl-nav {
+                display: none;
+            }
+
+            .timeline-info small {
+                display: block;
+                margin: 10px 0 0 0;
+            }
+
+        }
+    </style>
+
+</html>

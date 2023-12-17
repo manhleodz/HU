@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Primary Meta Tags -->
+        <title>Draw Huffman tree</title>
+        <meta name="title" content="File Compressor De-compressor">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrabop@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/e220b45dfe.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="style1.css">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/unicons.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+        <!-- MAIN STYLE -->
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3426/3426679.png">
+    </head>
+    <body>
+
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-sm navbar-light position-absolute top-0">
+            <div class="container">
+                <a class="navbar-brand" href="/WebApplication1"><img alt="avatar"
+                                                                     src="https://cdn-icons-png.flaticon.com/512/3426/3426679.png" style="width: 50px;" /></i> Huffman
+                    Coding</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="/WebApplication1" class="nav-link"><span data-hover="Home">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/WebApplication1/product.html" class="nav-link"><span data-hover="Product">Product</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/WebApplication1/document.jsp" class="nav-link"><span data-hover="Document">Document</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/WebApplication1/draw.html" class="nav-link"><span data-hover="Draw">Draw</span></a> 
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-lg-auto">
+                        <div class="ml-lg-4">
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container1" style="margin-top: 70px">
+            <div class="boxes">
+
+                <textarea class="sc" id="paragraph_text" oninput="convert() ,main()" cols="51" rows="15" placeholder="Input Your Text"></textarea> <div id="text_digit" class="digit">0</div>
+
+                <button id="bin_click">Hide</button>
+                <div class="sc" id="binary"></div> <div id="binary_digit" class="digit">0</div>
+
+                <!--<div id="result">0</div>-->
+                <button id="code_click">Hide</button>
+                <div class="sc" id="coded"></div> <div id="encoded_digit" class="digit">0</div>
+
+            </div>
+
+            <div class="box graph" id="huffman" style="background-color: #D3D3D3"></div>
+
+        </div>
+
+        <script src="./js/index.js"></script>
+        <script src="./js/huffman.js" ></script>
+        <script src="./js/draw.js"></script>
+        <script src="./js/d3js.js"></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CP4QE6ZEV0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-CP4QE6ZEV0');
+        </script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+
+</html>
